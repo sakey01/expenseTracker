@@ -1,0 +1,34 @@
+$primary-bg: grey;
+$primary-color: white;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: $primary-bg;
+    color: $primary-color;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    justify-content: space-between;
+    width: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
