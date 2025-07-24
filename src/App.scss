@@ -2,7 +2,9 @@
   --primary-bg: #1f2937;
   --secondary-bg: #111827;
   --primary-color: #ffffff;
-  --hover: #c2c2c2;
+  --hover-link: #c2c2c2;
+  --hover-btn: #202c4b;
+  --accent: rgb(0, 73, 162);
 }
 
 * {
@@ -20,11 +22,12 @@ html {
 header {
   position: relative;
   background-color: var(--secondary-bg);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 22px black;
   padding: 1rem;
   display: flex;
   justify-content: center;
   height: 4rem;
+  font-weight: 600;
 }
 
 nav {
@@ -36,9 +39,12 @@ nav {
 
   .brand-name {
     font-size: 1.2rem;
-    font-weight: 700;
     letter-spacing: 0.5px;
     transform: scaleY(1.1);
+  }
+
+  .login-btn {
+    font-weight: 600;
   }
 
   .menu-icon {
@@ -72,13 +78,16 @@ a {
   transition: color 0.1s ease;
 
   &:hover {
-    color: var(--hover);
+    color: var(--hover-link);
   }
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5.4rem;
   margin-top: 5rem;
+  font-weight: 600;
+  text-shadow: 0 10px 70px var(--accent);
+
   @media (max-width: 768px) {
     font-size: 4rem;
   }
@@ -125,7 +134,7 @@ button {
   border: none;
 
   &:hover {
-    color: var(--hover);
+    color: var(--hover-link);
   }
 }
 
@@ -133,6 +142,8 @@ button {
   position: relative;
   display: flex;
   align-items: center;
+  transition: all 0.1s ease-in-out;
+
   * {
     border-radius: 2rem;
     outline: none;
@@ -140,26 +151,27 @@ button {
 
   input {
     padding: 0.75rem 1rem;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     width: 300px;
     font-size: 1rem;
-    background-color: gainsboro;
+    background-color: whitesmoke;
+
     &:focus {
-      border: 3px solid #226fff;
+      border: 2px solid var(--accent);
     }
   }
 
   a {
     position: absolute;
-    padding: 0.5rem 0.75rem;
+    padding: 0.6rem 0.75rem;
     background-color: rgb(6, 25, 56);
-    left: 220px;
+    left: 225px;
     font-size: 0.9rem;
-    transition: all .1s ease-in-out;
+    font-weight: 600;
 
     &:hover {
-      color: white;
-      background-color: #455479;
+      color: var(--primary-color);
+      background-color: var(--hover-btn);
     }
   }
 }
