@@ -4,13 +4,11 @@ export default function App() {
       <header>
         <Header />
       </header>
-
       <main>
         <HeroSection />
         <AboutSection />
         <WhyUsSection />
       </main>
-
       <footer>
         <Footer />
       </footer>
@@ -29,9 +27,9 @@ function Header() {
           <a href="/">Dashboard</a>
           <a href="/">Account</a>
           <a href="/">Budgeting</a>
-          <button className="login-btn">
+          <a href="#" className="sign-in-btn">
             Sign In <span className="gt-arrow"> &rsaquo;</span>
-          </button>
+          </a>
         </div>
         <button className="menu-icon">
           <span>&#9776;</span>
@@ -56,7 +54,7 @@ function HeroSection() {
         </p>
       </div>
       <div className="email-input">
-        <input type="email" placeholder="Email address" aria-required required />
+        <input type="email" placeholder="Email address" required />
         <a href="/" className="ctaButton">
           Start Now <span className="gt-arrow"> &rsaquo;</span>
         </a>
