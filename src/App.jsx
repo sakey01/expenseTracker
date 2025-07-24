@@ -67,13 +67,14 @@ function AboutSection() {
   return (
     <section id="about-section">
       <h2>What You Can Do</h2>
-      <ul>
-        <li>Log income and expenses in seconds</li>
-        <li>See where your money goes with category breakdowns</li>
-        <li>Set personal savings goals and track progress</li>
-        <li>Stay within budget and get spending insights</li>
-        <li>100% private — your data stays with you</li>
-      </ul>
+      <div className="card-list">
+        <Card icon="fas fa-receipt" desc="Log income and expenses in seconds" />
+        <Card icon="fas fa-chart-pie" desc="See where your money goes with category" />
+        <Card icon="fas fa-receipt" desc="See where your money goes with category" />
+        <Card icon="fas fa-bullseye" desc="Set personal savings goals and track progress" />
+        <Card icon="fas fa-chart-line" desc="Stay within budget and get spending insights" />
+        <Card icon="fas fa-lock" desc="100% private — your data stays with you" />
+      </div>
     </section>
   );
 }
@@ -96,5 +97,14 @@ function Footer() {
       <h2>Ready to start?</h2>
       <p>Click "Get Started" and begin tracking your finances today — all in one place.</p>
     </footer>
+  );
+}
+
+function Card({icon, desc}) {
+  return (
+    <div className="card">
+      <i className={`${icon} card-icons`}></i>
+      <p className="card-desc">{desc}</p>
+    </div>
   );
 }
