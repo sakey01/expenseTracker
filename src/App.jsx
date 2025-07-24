@@ -7,7 +7,7 @@ export default function App() {
       <main>
         <HeroSection />
         <AboutSection />
-        <WhyUsSection />
+        <OfferSection />
       </main>
       <footer>
         <Footer />
@@ -66,6 +66,29 @@ function HeroSection() {
 function AboutSection() {
   return (
     <section id="about-section">
+      <div className="card">
+        <h2>What is FinTrack?</h2>
+        <div className="column-2x half-item">
+          <div className="content">
+            <p>
+              We are a simple budgeting application dedicated to students, focused on helping you
+              save money here and there.
+            </p>
+            <p>
+              Our mission is to simplify financial management with emerging technologies. We believe
+              in empowering everyone with the tools they need to succeed.
+            </p>
+          </div>
+          <img src="src/assets/stonks.png" alt="Finance concept" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OfferSection() {
+  return (
+    <section id="offer-section">
       <h2>What You Can Do</h2>
       <div className="card-list">
         <Card icon="fas fa-receipt" desc="Log income and expenses in seconds" />
@@ -79,28 +102,23 @@ function AboutSection() {
   );
 }
 
-function WhyUsSection() {
-  return (
-    <section id="why-us-section">
-      <h2>Why FinTrack?</h2>
-      <p>
-        We believe financial tracking should be easy and intuitive — not confusing. That’s why
-        FinTrack gives you only what you need, right when you need it.
-      </p>
-    </section>
-  );
-}
-
 function Footer() {
   return (
-    <footer className="footer-section">
-      <h2>Ready to start?</h2>
-      <p>Click "Get Started" and begin tracking your finances today — all in one place.</p>
+    <footer id="footer-section">
+      <h2>Join Now</h2>
+      <p>© 2025 FinTrack. All rights reserved.</p>
+      <div>
+        <a>Privacy Policy</a>
+        <span></span>
+        <a>Terms of Service</a>
+        <span></span>
+        <a>Contact Us</a>
+      </div>
     </footer>
   );
 }
 
-function Card({icon, desc}) {
+function Card({ icon, desc }) {
   return (
     <div className="card">
       <i className={`${icon} card-icons`}></i>
