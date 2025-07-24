@@ -24,7 +24,6 @@ header {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 4rem;
 }
 
@@ -42,8 +41,23 @@ nav {
     transform: scaleY(1.1);
   }
 
+  .menu-icon {
+    position: absolute;
+    right: -100%;
+    font-size: 1.2rem;
+    transform: scaleX(1.3);
+  }
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      right: 1rem;
+    }
+  }
+
   .nav-right {
+    position: relative;
     display: flex;
+    align-items: center;
     gap: 3rem;
 
     @media (max-width: 768px) {
@@ -80,6 +94,11 @@ section {
   height: 80vh;
   color: var(--primary-color);
   background: linear-gradient(to bottom right, #1f2937, #111827);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 #hero-section {
@@ -91,13 +110,10 @@ section {
     gap: 2rem;
     display: flex;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
     font-size: 1.1rem;
-    opacity: .8;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+    opacity: 0.8;
+    margin-right: 2rem;
   }
 }
 
@@ -110,5 +126,40 @@ button {
 
   &:hover {
     color: var(--hover);
+  }
+}
+
+.email-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  * {
+    border-radius: 2rem;
+    outline: none;
+  }
+
+  input {
+    padding: 0.75rem 1rem;
+    border: 3px solid transparent;
+    width: 300px;
+    font-size: 1rem;
+    background-color: gainsboro;
+    &:focus {
+      border: 3px solid #226fff;
+    }
+  }
+
+  a {
+    position: absolute;
+    padding: 0.5rem 0.75rem;
+    background-color: rgb(6, 25, 56);
+    left: 220px;
+    font-size: 0.9rem;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+      color: white;
+      background-color: #455479;
+    }
   }
 }

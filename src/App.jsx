@@ -31,6 +31,9 @@ function Header() {
           <a href="/">Budgeting</a>
           <button>Log In</button>
         </div>
+        <button className="menu-icon">
+          <span>&#9776;</span>
+        </button>
       </nav>
     </>
   );
@@ -40,14 +43,19 @@ function HeroSection() {
   return (
     <section id="hero-section">
       <h1>
-        Welcome to <div style={{color: '#7490c1ff'}}>FinTrack</div>
+        Welcome to <div style={{ color: "#7490c1ff" }}>FinTrack</div>
       </h1>
       <div className="content">
         <p>Take control of your money — simply and smartly.</p>
         <p>
-          <span style={{fontWeight: 'bold'}}>FinTrack</span> helps you stay on top of your finances with ease. Whether you're budgeting for
-          groceries, tracking income, or saving for your next big goal, we've got you covered.
+          <span style={{ fontWeight: "bold" }}>FinTrack</span> helps you stay on top of your
+          finances with ease. Whether you're budgeting for groceries, tracking income, or saving for
+          your next big goal, we've got you covered.
         </p>
+      </div>
+      <div className="email-input">
+        <input type="email" placeholder="Email address" aria-required required />
+        <a href="/" className="ctaButton">Start Now &gt;</a>
       </div>
     </section>
   );
