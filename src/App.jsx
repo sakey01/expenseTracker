@@ -48,9 +48,8 @@ function HeroSection() {
       <div className="content">
         <p>Take control of your money — simply and smartly.</p>
         <p>
-          <span style={{ fontWeight: "bold" }}>FinTrack</span> helps you stay on top of your
-          finances with ease. Whether you're budgeting for groceries, tracking income, or saving for
-          your next big goal, we've got you covered.
+          FinTrack helps you stay on top of your finances with ease. Whether you're budgeting for
+          groceries, tracking income, or saving for your next big goal, we've got you covered.
         </p>
       </div>
       <div className="email-input">
@@ -79,7 +78,6 @@ function AboutSection() {
               in empowering everyone with the tools they need to succeed.
             </p>
           </div>
-          <img src="src/assets/stonks.png" alt="Finance concept" />
         </div>
       </div>
     </section>
@@ -102,27 +100,54 @@ function OfferSection() {
   );
 }
 
-function Footer() {
-  return (
-    <footer id="footer-section">
-      <h2>Join Now</h2>
-      <p>© 2025 FinTrack. All rights reserved.</p>
-      <div>
-        <a>Privacy Policy</a>
-        <span></span>
-        <a>Terms of Service</a>
-        <span></span>
-        <a>Contact Us</a>
-      </div>
-    </footer>
-  );
-}
-
 function Card({ icon, desc }) {
   return (
     <div className="card">
       <i className={`${icon} card-icons`}></i>
       <p className="card-desc">{desc}</p>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer id="footer-section">
+      <div className="column-4x">
+        <div className="child-column">
+          <h3>Resources</h3>
+          <a href="">Guides</a>
+          <a href="">Blog</a>
+          <a href="">Licences</a>
+          <a href="">Cookie settings</a>
+        </div>
+
+        <div className="child-column">
+          <h3>Links</h3>
+          <a href="#">Dashboard</a>
+          <a>Budgeting</a>
+          <a>Account</a>
+          <a>Sign in &rsaquo;</a>
+        </div>
+
+        <div className="child-column">
+          <h3>Legal</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+
+        <div className="child-column">
+          <h3>Contact Us</h3>
+          <div>
+            <a href="#">info@fintrack.com</a>
+          </div>
+          <div>
+            <a href="#">+444444444444</a>
+          </div>
+        </div>
+      </div>
+      <div className="divider"></div>
+
+      <p id="copywrite">© 2025 FinTrack. All rights reserved.</p>
+    </footer>
   );
 }
