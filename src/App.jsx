@@ -68,16 +68,8 @@ function AboutSection() {
       <div className="card">
         <h2>What is FinTrack?</h2>
         <div className="column-2x half-item">
-          <div className="content">
-            <p>
-              We are a simple budgeting application dedicated to students, focused on helping you
-              save money here and there.
-            </p>
-            <p>
-              Our mission is to simplify financial management with emerging technologies. We believe
-              in empowering everyone with the tools they need to succeed.
-            </p>
-          </div>
+        
+            
         </div>
       </div>
     </section>
@@ -114,14 +106,6 @@ function Footer() {
     <footer id="footer-section">
       <div className="column-4x">
         <div className="child-column">
-          <h3>Resources</h3>
-          <a href="">Guides</a>
-          <a href="">Blog</a>
-          <a href="">Licences</a>
-          <a href="">Cookie settings</a>
-        </div>
-
-        <div className="child-column">
           <h3>Links</h3>
           <a href="#">Dashboard</a>
           <a>Budgeting</a>
@@ -130,9 +114,17 @@ function Footer() {
         </div>
 
         <div className="child-column">
+          <h3>Resources</h3>
+          <a href="">Guides</a>
+          <a href="">Blog</a>
+          <a href="">Licences</a>
+          <a href="">Cookie settings</a>
+        </div>
+
+        <div className="child-column">
           <h3>Legal</h3>
           <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#">Terms & Conditions</a>
         </div>
 
         <div className="child-column">
@@ -141,7 +133,7 @@ function Footer() {
             <a href="#">info@fintrack.com</a>
           </div>
           <div>
-            <a href="#">+444444444444</a>
+            <a href="#">+44 12345 6789</a>
           </div>
         </div>
       </div>

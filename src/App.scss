@@ -258,10 +258,11 @@ footer {
 
   @media (max-width: 768px) {
     .column-4x {
-      margin-left: 0;
       grid-template-columns: repeat(2, 1fr);
-      place-items: center;
       gap: 3rem;
+    }
+    .child-column {
+      margin: 0;
     }
   }
 }
