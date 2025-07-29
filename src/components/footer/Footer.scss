@@ -1,0 +1,57 @@
+footer {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: center;
+
+  .column-4x {
+    padding: 2rem 0;
+    align-items: start;
+    gap: 10rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  a {
+    color: grey;
+    text-align: left;
+    width: fit-content;
+  }
+
+  div {
+    color: grey;
+    gap: 1rem;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    opacity: 0.25;
+  }
+
+  #copywrite {
+    text-align: center;
+    color: grey;
+    font-weight: 400;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .column-4x {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+    .child-column {
+      margin: 0;
+    }
+  }
+}
