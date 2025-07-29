@@ -1,6 +1,4 @@
-@use "../App.scss" as app;
-@use "../styles/mixins" as *;
-
+@use "../../styles/mixins" as *;
 html {
   background-color: var(--primary-bg);
   color: var(--primary-color);

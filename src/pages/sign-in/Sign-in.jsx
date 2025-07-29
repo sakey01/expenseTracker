@@ -1,4 +1,4 @@
-import './signIn.scss';
+import './sign-in.scss';
 
 export default function SignIn() {
   return (
