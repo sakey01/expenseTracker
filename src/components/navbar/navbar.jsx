@@ -8,10 +8,10 @@ export default function Navbar() {
           FinTrack
         </a>
         <div className="nav-right">
-          <a href="/">Dashboard</a>
-          <a href="/">Account</a>
-          <a href="/">Budgeting</a>
-          <a href="#" className="sign-in-btn">
+          <a href="/dashboard">Dashboard</a>
+          <a href="/account">Account</a>
+          <a href="/budgeting">Budgeting</a>
+          <a href="/sign-in" className="sign-in-btn">
             Sign In <span className="gt-arrow"> &rsaquo;</span>
           </a>
         </div>
